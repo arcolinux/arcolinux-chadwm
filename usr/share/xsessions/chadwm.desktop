@@ -2,6 +2,6 @@
 Encoding=UTF-8
 Name=Chadwm
 Comment=Dynamic window manager
-Exec=/home/$USER/.config/arco-chadwm/scripts/run.sh 
+Exec=~/.config/arco-chadwm/scripts/run.sh 
 Icon=chadwm
 Type=Application
