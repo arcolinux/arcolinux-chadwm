@@ -66,6 +66,10 @@ static const char *colors[][3]      = {
 
 /* tagging */
 static char *tags[] = {"", "", "", "", "", "", "", "", ""};
+//static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+//static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+//static char *tags[] = { "", "", "", "", "", "", "", "", "" };
+//static char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" };
 
 static const char* eww[] = { "eww", "open" , "eww", NULL };
 
@@ -217,8 +221,8 @@ static Key keys[] = {
     { MODKEY|ShiftMask,                 XK_0,       tag,            {.ui = ~0 } },
     { MODKEY,                           XK_comma,   focusmon,       {.i = -1 } },
     { MODKEY,                           XK_period,  focusmon,       {.i = +1 } },
-    { MODKEY|ShiftMask,                 XK_comma,   tagmon,         {.i = -1 } },
-    { MODKEY|ShiftMask,                 XK_period,  tagmon,         {.i = +1 } },
+    { MODKEY|ShiftMask,                 XK_Left,    tagmon,         {.i = -1 } },
+    { MODKEY|ShiftMask,                 XK_Right,   tagmon,         {.i = +1 } },
 
     // change border size
     { MODKEY|ShiftMask,                 XK_minus,   setborderpx,    {.i = -1 } },

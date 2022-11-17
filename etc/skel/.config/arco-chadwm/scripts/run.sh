@@ -37,6 +37,8 @@ run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
 #you can set wallpapers in themes as well
 feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
 feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#feh --randomize --bg-fill /home/erik/Insync/Apps/Wallhaven/*
+
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 #run applications from startup
