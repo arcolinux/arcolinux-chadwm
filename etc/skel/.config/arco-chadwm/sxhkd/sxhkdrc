@@ -389,4 +389,4 @@ XF86MonBrightnessDown
 
 #Picom Toggle
 ctrl + alt + o
-    ~/.config/arco-dwm/scripts/picom-toggle.sh
+    ~/.config/arco-chadwm/scripts/picom-toggle.sh
