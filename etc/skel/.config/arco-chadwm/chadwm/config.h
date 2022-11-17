@@ -36,6 +36,10 @@ static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrain
 
 // theme
 #include "themes/onedark.h"
+//#include "themes/catppuccin.h"
+//#include "themes/nord.h"
+//#include "themes/gruvchad.h"
+//#include "themes/dracula.h"
 
 static const char *colors[][3]      = {
     /*                     fg       bg      border */
@@ -49,7 +53,11 @@ static const char *colors[][3]      = {
     [SchemeTag2]       = { red,     black,  black },
     [SchemeTag3]       = { orange,  black,  black },
     [SchemeTag4]       = { green,   black,  black },
-    [SchemeTag5]       = { pink,    black,  black },
+    [SchemeTag5]       = { blue,    black,  black },
+    [SchemeTag6]       = { pinky,    black,  black },
+    [SchemeTag7]       = { pink,    black,  black },
+    [SchemeTag8]       = { orange,    black,  black },
+    [SchemeTag9]       = { red,    black,  black },
     [SchemeLayout]     = { green,   black,  black },
     [SchemeBtnPrev]    = { green,   black,  black },
     [SchemeBtnNext]    = { yellow,  black,  black },
@@ -57,7 +65,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = {"", "", "", "", ""};
+static char *tags[] = {"", "", "", "", "", "", "", "", ""};
 
 static const char* eww[] = { "eww", "open" , "eww", NULL };
 
@@ -67,7 +75,7 @@ static const Launcher launchers[] = {
 };
 
 static const int tagschemes[] = {
-    SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4, SchemeTag5
+    SchemeTag1, SchemeTag2, SchemeTag3, SchemeTag4, SchemeTag5, SchemeTag6, SchemeTag7, SchemeTag8, SchemeTag9
 };
 
 static const unsigned int ulinepad      = 5; /* horizontal padding between the underline and tag */
@@ -81,7 +89,7 @@ static const Rule rules[] = {
      *	WM_NAME(STRING) = title
      */
     /* class      instance    title       tags mask     iscentered   isfloating   monitor */
-    { "Gimp",     NULL,       NULL,       0,            0,           1,           -1 },
+    { "Gimp",     NULL,       NULL,       0,            0,           0,           -1 },
     { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },
     { "eww",      NULL,       NULL,       0,            0,           1,           -1 },
 };
@@ -135,8 +143,8 @@ static Key keys[] = {
     {0,                     XF86XK_AudioMute,       spawn,          SHCMD("pamixer -t")},
     {0,              XF86XK_AudioRaiseVolume,       spawn,          SHCMD("pamixer -i 5")},
     {0,              XF86XK_AudioLowerVolume,       spawn,          SHCMD("pamixer -d 5")},
-    {0,              XF86XK_MonBrightnessDown,      spawn,          SHCMD("xbacklight -dec 5")},
-    {0,              XF86XK_MonBrightnessUp,        spawn,          SHCMD("xbacklight -inc 5")},
+    {0,             XF86XK_MonBrightnessDown,       spawn,          SHCMD("xbacklight -dec 5")},
+    {0,               XF86XK_MonBrightnessUp,       spawn,          SHCMD("xbacklight -inc 5")},
 
     // screenshot fullscreen and cropped
     {MODKEY|ControlMask,                XK_u,       spawn,
