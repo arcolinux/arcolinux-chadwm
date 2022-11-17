@@ -4,7 +4,7 @@
 #xbacklight -set 10 &
 xset r rate 200 50 &
 
-unction run {
+Function run {
  if ! pgrep $1 ;
   then
     $@&
