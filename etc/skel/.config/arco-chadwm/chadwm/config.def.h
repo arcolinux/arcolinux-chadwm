@@ -3,7 +3,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int default_border = 0;   /* to switch back to default border after dynamic border resizing via keybinds */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
@@ -72,10 +72,16 @@ static char *tags[] = {"", "", "", "", "", "", "", "", "
 //static char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" };
 
 static const char* eww[] = { "eww", "open" , "eww", NULL };
+static const char* discord[] = { "discord", "open" , "discord", NULL };
+static const char* telegram[] = { "telegram-desktop", "open" , "telegram-desktop", NULL };
+static const char* mintstick[] = { "mintstick", "-m", "iso", NULL};
 
 static const Launcher launchers[] = {
     /* command     name to display */
-    { eww,         "" },
+    { eww,         "襤" },
+    { discord,     "ﱲ" },
+    { telegram,    "" },
+    { mintstick,    "虜" },
 };
 
 static const int tagschemes[] = {
@@ -142,13 +148,6 @@ static const Layout layouts[] = {
 
 static Key keys[] = {
     /* modifier                         key         function        argument */
-
-    // brightness and audio 
-    {0,                     XF86XK_AudioMute,       spawn,          SHCMD("pamixer -t")},
-    {0,              XF86XK_AudioRaiseVolume,       spawn,          SHCMD("pamixer -i 5")},
-    {0,              XF86XK_AudioLowerVolume,       spawn,          SHCMD("pamixer -d 5")},
-    {0,             XF86XK_MonBrightnessDown,       spawn,          SHCMD("xbacklight -dec 5")},
-    {0,               XF86XK_MonBrightnessUp,       spawn,          SHCMD("xbacklight -inc 5")},
 
     // screenshot fullscreen and cropped
     {MODKEY|ControlMask,                XK_u,       spawn,
@@ -279,8 +278,8 @@ static Button buttons[] = {
     { ClkClientWin,         MODKEY,         Button1,        moveorplace,    {.i = 0} },
     { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
     { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
-    { ClkClientWin,         ControlMask,    Button1,        dragmfact,      {0} },
-    { ClkClientWin,         ControlMask,    Button3,        dragcfact,      {0} },
+    //{ ClkClientWin,         ControlMask,    Button1,        dragmfact,      {0} },
+    //{ ClkClientWin,         ControlMask,    Button3,        dragcfact,      {0} },
     { ClkTagBar,            0,              Button1,        view,           {0} },
     { ClkTagBar,            0,              Button3,        toggleview,     {0} },
     { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
