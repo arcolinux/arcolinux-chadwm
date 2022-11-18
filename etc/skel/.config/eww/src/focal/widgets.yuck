@@ -1,6 +1,6 @@
 (defwidget time[]
     (box :class 'time' 
-    '󱑆 ${time} | ${date}')
+    '  ${time} | ${date}')
  )
 
 (defwidget radialBars[]
@@ -17,6 +17,6 @@
       :class 'RAM'
       :boxClass 'RAMBOX'
       )
-      (button :class 'mute' :onclick 'amixer set Master 0' '' )
+      (button :class 'mute' :onclick 'amixer -D pulse set Master 1+ toggle' '' )
      )
 )

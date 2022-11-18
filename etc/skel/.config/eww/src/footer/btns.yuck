@@ -11,23 +11,23 @@
   (box :orientation "h"
        :class 'footerBtns'
  
-  (btn :name ""
+  (btn :name ""
   :command "rofi -show drun"
     :class "restart"
   )
 
-(btn :name ""
+(btn :name "ﳓ"
   :command "slock"
   :class "lock"
  )
 
- (btn :name wifi 
+ (btn :name "﬉" 
    :command "iwgtk"
    :class "wifi"
   )
 
- (btn :name "" 
-    :command "doas zzz"
+ (btn :name "" 
+    :command "systemctl suspend"
     :class "sleep"
   )
 ))

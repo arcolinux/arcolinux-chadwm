@@ -7,7 +7,7 @@
     (metric
              :class 'masterSlider'
              :value master_vol
-             :onchange "amixer set Master {}%"
+             :onchange "amixer -D pulse set Master {}%"
              :orientation 'v'
              :flipped true
          )
@@ -19,7 +19,7 @@
     (metric
              :class 'headphoneSlider'
              :value head_vol
-             :onchange "amixer set Headphone {}%"
+             :onchange "amixer -D pulse set Master {}%"
              :orientation 'v'
              :flipped true 
             ))
@@ -30,7 +30,7 @@
     (metric 
              :class 'micSlider'
              :value mic_vol
-             :onchange "amixer set Mic {}%"
+             :onchange "amixer -D pulse set Master {}%"
              :orientation 'v'
              :flipped true 
             ))

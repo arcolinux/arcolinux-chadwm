@@ -1,15 +1,15 @@
 #!/bin/sh
 
 headvol() {
-  amixer sget Headphone | grep 'Left:' | cut -d\  -f7 | tr -d '[%]'
+  amixer -D pulse get Master | awk '$0~/%/{print $5}' | tr -d '[%]' | uniq
 }
 
 mastervol() {
-  amixer get Master | awk '$0~/%/{print $4}' | tr -d '[%]'
+  amixer -D pulse get Master | awk '$0~/%/{print $5}' | tr -d '[%]' | uniq
 }
 
 micvol() {
-  amixer sget Mic | grep 'Left:' | cut -d\  -f7 | tr -d '[%]'
+  amixer -D pulse get Master | awk '$0~/%/{print $5}' | tr -d '[%]' | uniq
 }
 
 "$@"

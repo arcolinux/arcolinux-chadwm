@@ -27,7 +27,7 @@
 (defpoll head_vol :interval "1s"
   "scripts/audio headvol")
 
-(defpoll mic_vol :interval "1h"
+(defpoll mic_vol :interval "1s"
   "scripts/audio micvol")
 
 ; backlight 
