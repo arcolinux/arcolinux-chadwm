@@ -3,7 +3,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int default_border = 0;   /* to switch back to default border after dynamic border resizing via keybinds */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
@@ -72,10 +72,14 @@ static char *tags[] = {"", "", "", "", "", "", "", "", "
 //static char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" };
 
 static const char* eww[] = { "eww", "open" , "eww", NULL };
+static const char* discord[] = { "discord", "open" , "discord", NULL };
+static const char* telegram[] = { "telegram-desktop", "open" , "telegram-desktop", NULL };
 
 static const Launcher launchers[] = {
     /* command     name to display */
-    { eww,         "" },
+    { eww,         "襤" },
+    { discord,     "ﱲ" },
+    { telegram,    "" },
 };
 
 static const int tagschemes[] = {
@@ -272,8 +276,8 @@ static Button buttons[] = {
     { ClkClientWin,         MODKEY,         Button1,        moveorplace,    {.i = 0} },
     { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
     { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
-    { ClkClientWin,         ControlMask,    Button1,        dragmfact,      {0} },
-    { ClkClientWin,         ControlMask,    Button3,        dragcfact,      {0} },
+    //{ ClkClientWin,         ControlMask,    Button1,        dragmfact,      {0} },
+    //{ ClkClientWin,         ControlMask,    Button3,        dragcfact,      {0} },
     { ClkTagBar,            0,              Button1,        view,           {0} },
     { ClkTagBar,            0,              Button3,        toggleview,     {0} },
     { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
