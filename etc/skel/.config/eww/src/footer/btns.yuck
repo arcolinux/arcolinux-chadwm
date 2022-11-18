@@ -12,7 +12,7 @@
        :class 'footerBtns'
  
   (btn :name ""
-  :command "rofi -show drun"
+  :command "/home/erik/.config/arco-chadwm/launcher/launcher.sh"
     :class "restart"
   )
 
