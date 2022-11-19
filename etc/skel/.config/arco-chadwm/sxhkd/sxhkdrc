@@ -12,7 +12,7 @@ super + F1
 
 # Atom
 super + F2
-	atom
+	code
 
 #Inkscape
 super + F3

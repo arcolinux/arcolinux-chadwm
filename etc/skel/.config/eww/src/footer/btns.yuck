@@ -12,7 +12,7 @@
        :class 'footerBtns'
  
   (btn :name ""
-  :command "/home/erik/.config/arco-chadwm/launcher/launcher.sh"
+  :command "~/.config/arco-chadwm/launcher/launcher.sh"
     :class "restart"
   )
 
