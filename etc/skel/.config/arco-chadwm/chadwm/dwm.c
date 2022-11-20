@@ -375,6 +375,8 @@ static char stext[1024];
 static int screen;
 static int sw, sh;      /* X display screen geometry width, height */
 static int bh, blw = 0; /* bar geometry */
+static int enablefullscreen = 0;
+static int enableoutergaps = 1;
 static int th = 0;      /* tab bar geometry */
 static int lrpad;       /* sum of left and right padding for text */
 static int (*xerrorxlib)(Display *, XErrorEvent *);
