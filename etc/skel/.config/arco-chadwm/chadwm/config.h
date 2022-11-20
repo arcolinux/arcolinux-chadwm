@@ -31,8 +31,8 @@ static const int colorfultag        = 1;        /* 0 means use SchemeSel for sel
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font:style:medium:size=11",
-                                        "Material Design Icons Desktop:size=11" };
+static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font:style:medium:size=12",
+                                        "Material Design Icons Desktop:size=12" };
 
 // theme
 #include "themes/onedark.h"
@@ -105,7 +105,7 @@ static const Rule rules[] = {
     { "Gimp",     NULL,       NULL,       0,            0,           0,           -1 },
     { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },
     { "eww",      NULL,       NULL,       0,            0,           1,           -1 },
-    { "mintstick",      NULL,       NULL,       0,            0,           1,           -1 },
+    { "mintstick", NULL,      NULL,       0,            0,           0,           -1 },
 };
 
 /* layout(s) */
@@ -246,6 +246,8 @@ static Key keys[] = {
     { MODKEY,                           XK_e,       hidewin,        {0} },
     { MODKEY|ShiftMask,                 XK_e,       restorewin,     {0} },
 
+    // qwerty keyboard
+
     TAGKEYS(                            XK_1,                       0)
     TAGKEYS(                            XK_2,                       1)
     TAGKEYS(                            XK_3,                       2)
@@ -255,6 +257,18 @@ static Key keys[] = {
     TAGKEYS(                            XK_7,                       6)
     TAGKEYS(                            XK_8,                       7)
     TAGKEYS(                            XK_9,                       8)
+
+    // azerty keyboard (Belgium)
+    // TAGKEYS(                               XK_ampersand,                0)
+    // TAGKEYS(                               XK_eacute,                   1)
+    // TAGKEYS(                               XK_quotedbl,                 2)
+    // TAGKEYS(                               XK_apostrophe,               3)
+    // TAGKEYS(                               XK_parenleft,                4)
+    // TAGKEYS(                               XK_section,                  5)
+    // TAGKEYS(                               XK_egrave,                   6)
+    // TAGKEYS(                               XK_exclam,                   7)
+    // TAGKEYS(                               XK_ccedilla,                 8)
+
 };
 
 /* button definitions */
