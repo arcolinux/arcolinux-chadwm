@@ -83,8 +83,8 @@ super + r
     rofi-theme-selector
 
 #Urxvt
-#super + t
-#    urxvt
+super + t
+    urxvt
 
 #Pavucontrol
 super + v

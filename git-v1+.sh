@@ -16,8 +16,6 @@
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
-echo "Copy config.h"
-cp etc/skel/.config/arco-chadwm/chadwm/config.h etc/skel/.config/arco-chadwm/chadwm/config.def.h
 ./make-package.sh
 # Below command will backup everything inside the project folder
 git add --all .
