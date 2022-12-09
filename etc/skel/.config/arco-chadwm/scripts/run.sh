@@ -40,6 +40,9 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #feh --randomize --bg-fill /home/erik/Insync/Apps/Wallhaven/*
 #feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm.jpg &
 
+#nitrogen --set-zoom-fill --random /home/erik/Insync/Apps/Desktoppr/ --head=0
+#nitrogen --set-zoom-fill --random /home/erik/Insync/Apps/Desktoppr/ --head=1
+
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 #run applications from startup
@@ -50,5 +53,5 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #run "discord"
 #run "telegram-desktop"
 
-~/.config/arco-chadwm/scripts/bar.sh &
+run "~/.config/arco-chadwm/scripts/bar.sh &"
 while type chadwm >/dev/null; do chadwm && continue || break; done
