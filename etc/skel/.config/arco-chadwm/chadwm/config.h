@@ -80,11 +80,11 @@ static const char* pavucontrol[] = { "pavucontrol", NULL };
 
 static const Launcher launchers[] = {
     /* command     name to display */
-    { eww,         "數" },
-    { discord,     "ﱲ" },
-    { telegram,    "" },
-    { mintstick,    "虜" },
-    { pavucontrol,  "墳" },
+    { eww,           "數" },
+    { discord,       "ﱲ" },
+    { telegram,      "" },
+    { mintstick,     "虜" },
+    { pavucontrol,   "墳" },
 };
 
 static const int tagschemes[] = {

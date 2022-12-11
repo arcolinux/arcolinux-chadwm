@@ -53,5 +53,5 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #run "discord"
 #run "telegram-desktop"
 
-run "~/.config/arco-chadwm/scripts/bar.sh &"
+~/.config/arco-chadwm/scripts/bar.sh &
 while type chadwm >/dev/null; do chadwm && continue || break; done
