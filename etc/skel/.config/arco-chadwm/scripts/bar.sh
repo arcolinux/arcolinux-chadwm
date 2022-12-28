@@ -11,8 +11,8 @@ interval=0
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$green^ ^b$black^ CPU"
-  printf "^c$white^ ^b$grey^ $cpu_val"
+  printf "^c$white^ ^b$black^ CPU"
+  printf "^c$white^ ^b$black^ $cpu_val"
 }
 
 pkg_updates() {
