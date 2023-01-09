@@ -16,7 +16,7 @@ cpu() {
 }
 
 pkg_updates() {
-  updates=$(checkupdates 2>/dev/null | wc -l)   # arch
+  updates=$(checkupdates | wc -l)   # arch
 
   if [ -z "$updates" ]; then
     printf "  ^c$green^    Fully Updated"
