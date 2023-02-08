@@ -37,8 +37,7 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font:style:medium:size=12",
-                                        "Material Design Icons Desktop:size=12" };
+static const char *fonts[]          = {"JetBrainsMono Nerd Font:style:medium:size=12"};
 
 // theme
 #include "themes/onedark.h"
