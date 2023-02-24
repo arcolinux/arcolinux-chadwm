@@ -31,6 +31,7 @@ run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 picom -b  --config ~/.config/arco-chadwm/picom/picom.conf &
 run "numlockx on"
 run "volumeicon"
+#run "pa-applet"
 sxhkd -c ~/.config/arco-chadwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"
 run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
