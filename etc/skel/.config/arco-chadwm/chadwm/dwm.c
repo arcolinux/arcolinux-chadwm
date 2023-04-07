@@ -108,6 +108,7 @@ enum {
   SchemeTag7,
   SchemeTag8,
   SchemeTag9,
+  SchemeTag10,  
   SchemeLayout,
   TabSel,
   TabNorm,
