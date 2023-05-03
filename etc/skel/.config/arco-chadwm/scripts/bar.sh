@@ -48,7 +48,7 @@ wlan() {
 }
 
 clock() {
-	printf "^c$black^ ^b$darkblue^  "
+	#printf "^c$black^ ^b$darkblue^  "
 	printf "^c$black^^b$blue^ $(date '+%d/%m/%y %H:%M')  "
 }
 

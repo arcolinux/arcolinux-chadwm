@@ -37,7 +37,7 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"JetBrainsMono Nerd Font:style:medium:size=12"};
+static const char *fonts[]          = {"JetBrainsMono Nerd Font Mono:style:bold:size=13"};
 
 // theme
 #include "themes/onedark.h"
@@ -71,7 +71,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
+static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
 //static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 //static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
 //static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
