@@ -71,7 +71,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
+static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
 //static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 //static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
 //static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
@@ -197,7 +197,7 @@ static const Key keys[] = {
 
     { MODKEY|ShiftMask,                 XK_j,       movestack,      {.i = +1 } },
     { MODKEY|ShiftMask,                 XK_k,       movestack,      {.i = -1 } },
-    { MODKEY|ShiftMask,                 XK_Return,  zoom,           {0} },
+    //{ MODKEY|ShiftMask,                 XK_Return,  zoom,           {0} },
     { MODKEY,                           XK_Tab,     view,           {0} },
 
     // overall gaps

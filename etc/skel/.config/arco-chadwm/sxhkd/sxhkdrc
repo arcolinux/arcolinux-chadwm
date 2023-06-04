@@ -137,6 +137,10 @@ super + shift + s
 # CONTROL + ALT KEYS
 #################################################################
 
+#arcolinux-application-glade
+ctrl + alt + d
+     arcolinux-app-glade
+
 #arcolinux-welcome-app
 ctrl + alt + w
      arcolinux-welcome-app
