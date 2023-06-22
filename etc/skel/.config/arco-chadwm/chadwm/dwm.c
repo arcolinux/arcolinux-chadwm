@@ -41,7 +41,6 @@
 #ifdef XINERAMA
 #include <X11/extensions/Xinerama.h>
 #endif /* XINERAMA */
-#include <X11/extensions/shape.h>
 #include <X11/Xft/Xft.h>
 #include <Imlib2.h>
 #include "drw.h"
@@ -451,6 +450,7 @@ struct Monitor {
 
 #include "vanitygaps.c"
 #include "movestack.c"
+#include "shiftview.c"
 
 struct Pertag {
 	unsigned int curtag, prevtag; /* current and previous tag */

@@ -1,6 +1,6 @@
 (defwidget time[]
     (box :class 'time' 
-    '  ${time} | ${date}')
+    '󱑆 ${time} | ${date}')
  )
 
 (defwidget radialBars[]
