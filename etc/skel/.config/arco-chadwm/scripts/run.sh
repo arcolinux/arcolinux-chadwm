@@ -22,7 +22,7 @@ run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 #autorandr horizontal
 #run "autorandr horizontal"
 run "nm-applet"
-run "pamac-tray"
+#run "pamac-tray"
 #run "variety"
 run "xfce4-power-manager"
 run "blueberry-tray"
@@ -56,6 +56,8 @@ feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm1.png &
 #run "discord"
 #run "telegram-desktop"
 #run "dropbox"
+#run "/usr/bin/octopi-notifier"
+
 
 pkill bar.sh
 ~/.config/arco-chadwm/scripts/bar.sh &
