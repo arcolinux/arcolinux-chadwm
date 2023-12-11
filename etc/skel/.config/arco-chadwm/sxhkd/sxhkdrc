@@ -78,7 +78,7 @@ super + c
 super + x
     archlinux-logout
 
-#archlinux-logout
+#powermenu
 super + shift + x
     ~/.config/arco-chadwm/powermenu/powermenu
 
