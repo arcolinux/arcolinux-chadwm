@@ -309,6 +309,8 @@ alt + shift + u
 ctrl + shift + Escape
     xfce4-taskmanager
 
+ctrl + alt + End
+    dex --term alacritty /usr/share/applications/btop.desktop
 
 #################################################################
 #     SCREENSHOTS
