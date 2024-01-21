@@ -80,7 +80,7 @@ super + x
 
 #powermenu
 super + shift + x
-    ~/.config/arco-chadwm/powermenu/powermenu
+    arcolinux-powermenu
 
 #Rofi theme selector
 super + r
@@ -310,6 +310,9 @@ ctrl + shift + Escape
     xfce4-taskmanager
 
 ctrl + alt + End
+    dex --term alacritty /usr/share/applications/btop.desktop
+
+ctrl + alt + n
     dex --term alacritty /usr/share/applications/btop.desktop
 
 #################################################################

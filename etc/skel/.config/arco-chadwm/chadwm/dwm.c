@@ -113,7 +113,15 @@ enum {
   TabNorm,
   SchemeBtnPrev,
   SchemeBtnNext,
-  SchemeBtnClose
+  SchemeBtnClose,
+  SchemeColor,
+  SchemeLayoutDS,
+  SchemeLayoutFF,
+  SchemeLayoutEW,
+  SchemeLayoutMS,
+  SchemeLayoutPC,
+  SchemeLayoutTG,
+  SchemeLayoutVV
 }; /* color schemes */
 enum {
   NetSupported,
@@ -1519,12 +1527,37 @@ void drawbar(Monitor *m) {
     x += w;
   }
   w = TEXTW(m->ltsymbol);
-  drw_setscheme(drw, scheme[SchemeLayout]);
+  //drw_setscheme(drw, scheme[SchemeLayout]);
   x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
 
   	for (i = 0; i < LENGTH(launchers); i++)
 	{
-		w = TEXTW(launchers[i].name);
+      if (launchers[i].command == firefox){
+        drw_setscheme(drw, scheme[SchemeLayoutFF]);
+      }
+      if (launchers[i].command == eww){
+        drw_setscheme(drw, scheme[SchemeLayoutEW]);
+      }
+      if (launchers[i].command == discord){
+        drw_setscheme(drw, scheme[SchemeLayoutDS]);
+      }
+      if (launchers[i].command == telegram){
+        drw_setscheme(drw, scheme[SchemeLayoutTG]);
+      }
+      if (launchers[i].command == mintstick){
+        drw_setscheme(drw, scheme[SchemeLayoutMS]);
+      }
+      if (launchers[i].command == pavucontrol){
+        drw_setscheme(drw, scheme[SchemeLayoutPC]);
+      }
+
+      if (launchers[i].command == vivaldi){
+        drw_setscheme(drw, scheme[SchemeLayoutVV]);
+      }
+
+        w = TEXTW(launchers[i].name);
+
+
 		drw_text(drw, x, 0, w, bh, lrpad / 2, launchers[i].name, urg & 1 << i);
 		x += w;
 	}
