@@ -41,6 +41,7 @@ static const char *fonts[]          = {"JetBrainsMono Nerd Font Mono:style:bold:
 
 // theme
 #include "themes/onedark.h"
+//#include "themes/prime.h"
 //#include "themes/catppuccin.h"
 //#include "themes/dracula.h"
 //#include "themes/gruvchad.h"
