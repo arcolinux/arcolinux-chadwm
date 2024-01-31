@@ -70,10 +70,6 @@ super + w
 super + c
     conky-toggle
 
-#Htop
-#super + h
-#    urxvt 'htop task manager' -e htop
-
 #archlinux-logout
 super + x
     archlinux-logout
@@ -86,9 +82,9 @@ super + shift + x
 super + r
     rofi-theme-selector
 
-#Urxvt
+#Alacritty
 super + t
-    urxvt
+    alacritty
 
 #Pavucontrol
 super + v
