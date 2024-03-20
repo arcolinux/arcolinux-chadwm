@@ -33,15 +33,14 @@ echo
 
 user=$( who | cut -d ' ' -f1 | uniq)
 
-cp -v /home/$user/.config/arco-chadwm/chadmw/config.def-azerty.h /home/$user/.config/arco-chadwm/chadmw/config.def.h
-if [ -f cp -v /home/$user/.config/arco-chadwm/chadmw/config.h ]; then
-	rm cp -v /home/$user/.config/arco-chadwm/chadmw/config.h
+cp -v /home/$user/.config/arco-chadwm/chadwm/config.def-azerty.h /home/$user/.config/arco-chadwm/chadwm/config.def.h
+if [ -f /home/$user/.config/arco-chadwm/chadwm/config.h ]; then
+	rm -v /home/$user/.config/arco-chadwm/chadwm/config.h
 fi
 
-cd /home/$user/.config/arco-chadwm/chadmw/
+cd /home/$user/.config/arco-chadwm/chadwm/
 make
 sudo make install
-
 
 echo
 echo "###############################################################################"
