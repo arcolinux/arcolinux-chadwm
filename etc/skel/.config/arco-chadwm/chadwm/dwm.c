@@ -1526,41 +1526,33 @@ void drawbar(Monitor *m) {
                urg & 1 << i); */
     x += w;
   }
-  w = TEXTW(m->ltsymbol);
-  //drw_setscheme(drw, scheme[SchemeLayout]);
-  x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
 
-  	for (i = 0; i < LENGTH(launchers); i++)
-	{
-      if (launchers[i].command == firefox){
+w = TEXTW(m->ltsymbol);
+// Set scheme for layout symbol (if needed, uncomment and set the appropriate scheme)
+// drw_setscheme(drw, scheme[SchemeLayout]);
+x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
+
+for (i = 0; i < LENGTH(launchers); i++) {
+    if (launchers[i].command == firefox) {
         drw_setscheme(drw, scheme[SchemeLayoutFF]);
-      }
-      if (launchers[i].command == eww){
+    } else if (launchers[i].command == eww) {
         drw_setscheme(drw, scheme[SchemeLayoutEW]);
-      }
-      if (launchers[i].command == discord){
+    } else if (launchers[i].command == discord) {
         drw_setscheme(drw, scheme[SchemeLayoutDS]);
-      }
-      if (launchers[i].command == telegram){
+    } else if (launchers[i].command == telegram) {
         drw_setscheme(drw, scheme[SchemeLayoutTG]);
-      }
-      if (launchers[i].command == mintstick){
+    } else if (launchers[i].command == mintstick) {
         drw_setscheme(drw, scheme[SchemeLayoutMS]);
-      }
-      if (launchers[i].command == pavucontrol){
+    } else if (launchers[i].command == pavucontrol) {
         drw_setscheme(drw, scheme[SchemeLayoutPC]);
-      }
-
-      if (launchers[i].command == vivaldi){
+    } else if (launchers[i].command == vivaldi) {
         drw_setscheme(drw, scheme[SchemeLayoutVV]);
-      }
+    }
 
-        w = TEXTW(launchers[i].name);
-
-
-		drw_text(drw, x, 0, w, bh, lrpad / 2, launchers[i].name, urg & 1 << i);
-		x += w;
-	}
+    w = TEXTW(launchers[i].name);
+    drw_text(drw, x, 0, w, bh, lrpad / 2, launchers[i].name, urg & 1 << i);
+    x += w;
+}
 
   w = floatbar?mw + m->gappov * 2 - sw - stw - x:mw - sw - stw - x;
   if (w > bh_n) {

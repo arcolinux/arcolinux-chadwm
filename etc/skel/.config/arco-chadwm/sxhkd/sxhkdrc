@@ -84,7 +84,7 @@ super + r
 
 #Alacritty
 super + t
-    alacritty
+    st
 
 #Pavucontrol
 super + v
