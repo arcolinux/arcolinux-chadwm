@@ -1,0 +1,87 @@
+
+
+
+Xinerama
+
+Xinerama is an extension to the X Window System that enables multi-head display support, allowing multiple physical monitors to function as a single large virtual screen.
+
+------------------------------------------------
+
+
+CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
+
+Breakdown
+
+CPPFLAGS:
+
+This is a Makefile variable used to specify options for the C preprocessor. It stands for "C PreProcessor Flags".
+
+-D_DEFAULT_SOURCE:
+
+This flag defines the _DEFAULT_SOURCE macro. It enables default features in the GNU C Library (glibc) that are necessary for compatibility with various C standards and extensions.
+
+-D_BSD_SOURCE:
+
+This flag defines the _BSD_SOURCE macro. It enables BSD (Berkeley Software Distribution) specific features and extensions in the GNU C Library. This is useful for code that relies on BSD-specific functionality.
+
+-D_XOPEN_SOURCE=700L:
+
+This flag defines the _XOPEN_SOURCE macro with a value of 700L, which corresponds to POSIX.1-2008 and XPG7 (X/Open Portability Guide). It ensures that the code adheres to the standards and features specified by these versions, making the code more portable and standard-compliant.
+
+-DVERSION=\"${VERSION}\":
+
+This flag defines the VERSION macro with the value of the VERSION variable from the Makefile. It typically includes the version number of the software, and is used to embed the version information directly in the source code.
+
+${XINERAMAFLAGS}:
+
+This variable includes additional preprocessor flags related to Xinerama support. It is defined earlier in the Makefile as -DXINERAMA, which enables support for the Xinerama extension in the X Window System. This flag is necessary if the program includes code that interacts with Xinerama for multi-head display configurations.
+
+
+
+------------------------------------------------
+
+
+CFLAGS   = -std=c99 -pedantic -Wall -Wno-deprecated-declarations -O3 -march=native ${INCS} ${CPPFLAGS} -Wno-unused-function
+
+
+Breakdown
+
+CFLAGS:
+
+This is a Makefile variable used to specify options for the C compiler (gcc in this case). It stands for "Compiler Flags".
+
+-std=c99:
+
+This flag specifies that the C99 standard should be used for compiling the code. C99 is a version of the C programming language standard that includes several new features and improvements over previous standards.
+
+-pedantic:
+
+This flag enforces strict adherence to the C99 standard. It generates warnings for any code that does not comply with the standard, helping ensure portability and standard compliance.
+
+-Wall:
+
+This flag enables most compiler warnings. "Wall" stands for "warn all" and helps catch potential issues in the code by enabling a broad set of warning messages.
+
+-Wno-deprecated-declarations:
+
+This flag suppresses warnings about deprecated functions or declarations. It is useful when working with legacy code or libraries that use deprecated features, preventing these warnings from cluttering the output.
+
+-O3:
+
+This flag enables high-level optimization. The -O3 level includes all the optimizations from -O2 plus more aggressive optimizations that may improve performance but can increase compilation time.
+
+-march=native:
+
+This flag enables the compiler to generate code optimized for the host machine’s architecture. It allows the compiler to use all the features and instruction sets available on the local machine, potentially improving performance but reducing portability to other architectures.
+
+${INCS}:
+
+This is a Makefile variable that includes the paths to additional directories where the compiler should look for header files. It is expanded to include paths specified earlier in the Makefile.
+
+${CPPFLAGS}:
+
+This is another Makefile variable that represents preprocessor flags. It is expanded to include flags specified earlier in the Makefile with the CPPFLAGS variable. These flags are passed to the C preprocessor before actual compilation.
+
+-Wno-unused-function:
+
+This flag suppresses warnings about unused functions. It is useful when you have functions defined in the code that are not used, preventing these warnings from cluttering the output.

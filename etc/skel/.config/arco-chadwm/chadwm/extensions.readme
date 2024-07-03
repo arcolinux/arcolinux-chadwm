@@ -1,0 +1,35 @@
+File extensions
+
+
+.h (Header Files)
+Purpose: Header files contain declarations for functions, macros, constants, and data types. They are included in source files using the #include preprocessor directive.
+Usage: Used to declare interfaces for the corresponding implementation files (.c files).
+Example: config.h might declare configuration settings and function prototypes used across multiple source files.
+
+.mk makefiles
+
+Purpose: Makefiles contain rules for building and managing projects. They specify how to compile and link the program.
+Usage: Used by the make build automation tool to control the build process, specifying dependencies and commands for compiling and linking.
+Example: A Makefile (often without an extension, but can have .mk as an extension) might contain rules for building a C project, specifying which source files to compile and how to link them.
+
+.c (Source Files)
+Purpose: Source files contain the actual implementation of functions and logic written in C.
+Usage: Compiled by a C compiler (e.g., gcc) to produce object files (.o files).
+Example: main.c might contain the main function and other function implementations for a C program.
+
+.o (Object Files)
+Purpose: Object files are the compiled output of source files. They contain machine code but are not yet linked into an executable.
+Usage: Used as intermediate files in the build process. Multiple object files are linked together to create the final executable.
+Example: main.o is the compiled output of main.c, containing machine code for the functions defined in main.c.
+
+.1 (Man Pages)
+Purpose: Man pages (manual pages) provide documentation for commands, functions, or file formats in Unix-like systems. The .1 extension indicates section 1 of the manual, which covers user commands.
+Usage: Viewed using the man command, providing users with usage information and options for commands.
+Example: ls.1 might contain documentation for the ls command, explaining its usage, options, and examples.
+
+Summary
+.h: Header files with declarations and macros.
+.mk: Makefiles specifying build rules.
+.c: Source files with C code implementation.
+.o: Object files with compiled machine code.
+.1: Man pages for user command documentation.

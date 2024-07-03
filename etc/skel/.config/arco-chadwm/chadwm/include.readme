@@ -1,0 +1,84 @@
+```c
+// Header for X11 atom definitions
+#include <X11/Xatom.h>
+
+// Header for basic X11 functions
+#include <X11/Xlib.h>
+
+// Header for X11 protocol structures
+#include <X11/Xproto.h>
+
+// Header for X11 utility functions
+#include <X11/Xutil.h>
+
+// Header for X11 cursor font definitions
+#include <X11/cursorfont.h>
+
+// Header for X11 key symbols
+#include <X11/keysym.h>
+
+// Header for error number definitions
+#include <errno.h>
+
+// Header for localization functions
+#include <locale.h>
+
+// Header for signal handling
+#include <signal.h>
+
+// Header for handling variable arguments
+#include <stdarg.h>
+
+// Header for standard input and output functions
+#include <stdio.h>
+
+// Header for standard library functions like memory allocation
+#include <stdlib.h>
+
+// Header for string handling functions
+#include <string.h>
+
+// Header for system data types
+#include <sys/types.h>
+
+// Header for process and wait functions
+#include <sys/wait.h>
+
+// Header for POSIX operating system API
+#include <unistd.h>
+
+// Header for implementation-defined constants
+#include <limits.h>
+
+// Header for integer types with specified widths
+#include <stdint.h>
+
+#ifdef XINERAMA
+// Header for Xinerama extension functions
+#include <X11/extensions/Xinerama.h>
+#endif /* XINERAMA */
+
+// Header for Xft (X FreeType interface) functions
+#include <X11/Xft/Xft.h>
+
+// Header for Imlib2 image loading and rendering
+#include <Imlib2.h>
+
+// Header for drawing utility functions specific to this project
+#include "drw.h"
+
+// Header for general utility functions specific to this project
+#include "util.h"
+
+// Header for project-specific configuration
+#include "config.h"
+
+// Header for vanity gaps (layout gaps)
+#include "vanitygaps.c"
+
+// Header for stack manipulation functions
+#include "movestack.c"
+
+// Header for shifting view functions
+#include "shiftview.c"
+```

@@ -6,6 +6,7 @@
 
 #include "util.h"
 
+// Function to print an error message and exit
 void
 die(const char *fmt, ...)
 {
@@ -25,6 +26,7 @@ die(const char *fmt, ...)
 	exit(1);
 }
 
+// Function to allocate memory and check for allocation failure
 void *
 ecalloc(size_t nmemb, size_t size)
 {

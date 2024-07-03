@@ -39,8 +39,10 @@ if [ -f /home/$user/.config/arco-chadwm/chadwm/config.h ]; then
 fi
 
 cd /home/$user/.config/arco-chadwm/chadwm/
+make clean
 make
 sudo make install
+make clean
 
 echo
 echo "###############################################################################"
