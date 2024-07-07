@@ -127,6 +127,7 @@ static const Rule rules[] = {
     { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },
     { "eww",      NULL,       NULL,       0,            0,           1,           -1 },
     { "mintstick", NULL,      NULL,       0,            0,           0,           -1 },
+    { "Nlogout",  NULL,       NULL,       0,            1,           1,           -1 },
 };
 
 /* layout(s) */
@@ -278,6 +279,7 @@ static const Key keys[] = {
     // kill window
     { MODKEY,                           XK_q,       killclient,     {0} },
     { MODKEY|ShiftMask,                 XK_q,       killclient,     {0} },
+    { MODKEY|ShiftMask,                 XK_c,       killclient,     {0} },
 
     // restart
     { MODKEY|ShiftMask,                 XK_r,       restart,           {0} },

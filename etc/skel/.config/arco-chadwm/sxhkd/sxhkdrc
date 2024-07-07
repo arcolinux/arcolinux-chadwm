@@ -78,6 +78,10 @@ super + x
 super + shift + x
     arcolinux-powermenu
 
+#nlogout
+alt + shift + x
+    nlogout
+
 #Rofi theme selector
 super + r
     rofi-theme-selector
@@ -123,6 +127,10 @@ super + shift + KP_Enter
 #dmenu
 super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+#dmenu
+super + p
+    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #rofi large
 super + d
