@@ -301,6 +301,7 @@ static Client *nexttiled(Client *c);
 static void placemouse(const Arg *arg);
 static void pop(Client *c);
 static void propertynotify(XEvent *e);
+static void quit(const Arg *arg);
 static void restart(const Arg *arg);
 static Client *recttoclient(int x, int y, int w, int h);
 static Monitor *recttomon(int x, int y, int w, int h);
@@ -2501,6 +2502,12 @@ void propertynotify(XEvent *e) {
     if (ev->atom == netatom[NetWMWindowType])
       updatewindowtype(c);
   }
+}
+
+void
+quit(const Arg *arg)
+{
+  system("pkill dwm");
 }
 
 void restart(const Arg *arg) {

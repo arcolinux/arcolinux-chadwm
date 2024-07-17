@@ -274,7 +274,7 @@ static const Key keys[] = {
     { MODKEY|ShiftMask,                 XK_w,       setborderpx,    {.i = default_border } },
 
     // kill dwm
-    //{ MODKEY|ControlMask,               XK_q,       spawn,        SHCMD("killall bar.sh chadwm") },
+    { ControlMask|Mod1Mask,             XK_Delete, quit,            {0} },
 
     // kill window
     { MODKEY,                           XK_q,       killclient,     {0} },
@@ -337,9 +337,9 @@ static const Button buttons[] = {
     */
     { ClkClientWin,         MODKEY,         Button1,        moveorplace,    {.i = 0} },
     { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
-    { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
-    //{ ClkClientWin,         ControlMask,    Button1,        dragmfact,      {0} },
-    //{ ClkClientWin,         ControlMask,    Button3,        dragcfact,      {0} },
+    //{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
+    { ClkClientWin,         MODKEY,			Button3,        dragmfact,      {0} },
+    //{ ClkClientWin,         MODKEY,    	Button3,        dragcfact,      {0} },
     { ClkTagBar,            0,              Button1,        view,           {0} },
     { ClkTagBar,            0,              Button3,        toggleview,     {0} },
     { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
