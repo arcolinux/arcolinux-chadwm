@@ -82,6 +82,10 @@ super + shift + x
 alt + shift + x
     nlogout
 
+#nlogout
+alt + x
+    nlogout
+
 #Rofi theme selector
 super + r
     rofi-theme-selector
