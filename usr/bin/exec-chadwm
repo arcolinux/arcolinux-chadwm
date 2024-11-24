@@ -2,4 +2,19 @@
 
 cd ~
 
-~/.config/arco-chadwm/scripts/run.sh 
+# Check if ~/.config/arco-chadwm exists
+if [ ! -d "$HOME/.config/arco-chadwm" ]; then
+    echo "Directory ~/.config/arco-chadwm does not exist. Copying from /etc/skel/.config/arco-chadwm..."
+
+    # Ensure the target directory exists
+    mkdir -p "$HOME/.config"
+
+    # Copy the contents from /etc/skel/.config/arco-chadwm to ~/.config/arco-chadwm
+    cp -r /etc/skel/.config/arco-chadwm "$HOME/.config/arco-chadwm"
+
+else
+    echo "Directory ~/.config/arco-chadwm already exists. Skipping copy."
+fi
+
+# Run the script
+~/.config/arco-chadwm/scripts/run.sh
